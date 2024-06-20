@@ -6,7 +6,7 @@ const QrScannerComponent = () => {
 
   const handleScan = (data) => {
     if (data) {
-      setScanResult(data.text); // Update this line to ensure the correct data is being set
+      setScanResult(data.text);
     }
   };
 
@@ -28,7 +28,7 @@ const QrScannerComponent = () => {
         onError={handleError}
         onScan={handleScan}
         constraints={{
-          video: { facingMode: "environment" }, // This sets the camera to the back camera
+          video: { facingMode: { exact: "environment" } }, // This ensures the back camera is used
         }}
       />
       <h3>Scan Result:</h3>
