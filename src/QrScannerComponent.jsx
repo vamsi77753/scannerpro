@@ -27,6 +27,9 @@ const QrScannerComponent = () => {
         style={previewStyle}
         onError={handleError}
         onScan={handleScan}
+        constraints={{
+          video: { facingMode: "environment" }, // This sets the camera to the back camera
+        }}
       />
       <h3>Scan Result:</h3>
       <p>{scanResult}</p>
