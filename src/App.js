@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>QR Code Scanner App</h1>
+        <h1>QR Code Scanner App for adhar</h1>
       </header>
       <main>
         <QrCodeGenerator />
