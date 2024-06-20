@@ -6,7 +6,7 @@ const QrScannerComponent = () => {
 
   const handleScan = (data) => {
     if (data) {
-      setScanResult(data);
+      setScanResult(data.text); // Update this line to ensure the correct data is being set
     }
   };
 
